@@ -1,0 +1,16 @@
+{
+    "name": "empi89/php-amqp-stubs",
+    "type": "library",
+    "description": "pdezwart/php-amqp stubs via packagist",
+    "keywords": ["amqp", "testing"],
+    "homepage": "http://github.com/empi89/php-amqp-stubs",
+    "license": "PHP",
+    "require": {
+        "php": ">=5.1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src"
+        }
+    }
+}
