@@ -9,7 +9,7 @@ class AMQPConnection
      *
      * This method will initiate a connection with the AMQP broker.
      *
-     * @throws AMQP_ConnectionException
+     * @throws AMQPConnectionException
      * @return boolean TRUE on success or throw an exception on failure.
      */
     public function connect()
@@ -30,7 +30,8 @@ class AMQPConnection
      *      'login' => amqp.login The login name to use. Note: Max 128 characters.
      *      'password' => amqp.password Password. Note: Max 128 characters.
      *      'read_timeout'  => Timeout in for income activity. Note: 0 or greater seconds. May be fractional.
-     *      'read_timeout'  => Timeout in for outcome activity. Note: 0 or greater seconds. May be fractional.
+     *      'write_timeout'  => Timeout in for outcome activity. Note: 0 or greater seconds. May be fractional.
+     *      'connect_timeout' => Connection timeout. Note: 0 or greater seconds. May be fractional.
      * )
      *
      * @param array $credentials Optional array of credential information for
@@ -113,7 +114,7 @@ class AMQPConnection
      * This method will initiate a connection with the AMQP broker
      * or reuse an existing one if present.
      *
-     * @throws AMQP_ConnectionException
+     * @throws AMQPConnectionException
      * @return boolean TRUE on success or throws an exception on failure.
      */
     public function pconnect()
