@@ -1,4 +1,5 @@
 <?php
+
 /**
  * stub class representing AMQPConnection from pecl-amqp
  */
@@ -30,7 +31,7 @@ class AMQPConnection
      *      'login' => amqp.login The login name to use. Note: Max 128 characters.
      *      'password' => amqp.password Password. Note: Max 128 characters.
      *      'read_timeout'  => Timeout in for income activity. Note: 0 or greater seconds. May be fractional.
-     *      'write_timeout'  => Timeout in for outcome activity. Note: 0 or greater seconds. May be fractional.
+     *      'write_timeout' => Timeout in for outcome activity. Note: 0 or greater seconds. May be fractional.
      *      'connect_timeout' => Connection timeout. Note: 0 or greater seconds. May be fractional.
      * )
      *
@@ -134,8 +135,6 @@ class AMQPConnection
     public function pdisconnect()
     {
     }
-
-
 
     /**
      * Close any open connections and initiate a new one with the AMQP broker.
@@ -283,4 +282,3 @@ class AMQPConnection
     {
     }
 }
-

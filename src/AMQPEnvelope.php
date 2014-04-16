@@ -1,4 +1,5 @@
 <?php
+
 /**
  * stub class representing AMQPEnvelope from pecl-amqp
  */
@@ -51,7 +52,7 @@ class AMQPEnvelope
 
     /**
      * Get the delivery mode of the message.
-     * 
+     *
      * @return integer The delivery mode of the message.
      */
     public function getDeliveryMode()
@@ -185,4 +186,3 @@ class AMQPEnvelope
     {
     }
 }
-
