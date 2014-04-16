@@ -1,4 +1,5 @@
 <?php
+
 /**
  * stub class representing AMQPChannel from pecl-amqp
  */
@@ -13,7 +14,7 @@ class AMQPChannel
      *
      * @return bool TRUE on success or FALSE on failure.
      */
-    public function commitTransaction ()
+    public function commitTransaction()
     {
     }
 
@@ -27,7 +28,7 @@ class AMQPChannel
      * @throws AMQPConnectionException        If the connection to the broker
      *                                        was lost.
      */
-    public function __construct (AMQPConnection $amqp_connection)
+    public function __construct(AMQPConnection $amqp_connection)
     {
     }
 
@@ -36,7 +37,7 @@ class AMQPChannel
      *
      * @return bool Indicates whether the channel is connected.
      */
-    public function isConnected ()
+    public function isConnected()
     {
     }
 
@@ -45,7 +46,7 @@ class AMQPChannel
      *
      * @return integer
      */
-    public function getChannelId ()
+    public function getChannelId()
     {
     }
 
@@ -71,7 +72,7 @@ class AMQPChannel
      *
      * @return bool TRUE on success or FALSE on failure.
      */
-    public function qos ($size, $count)
+    public function qos($size, $count)
     {
     }
 
@@ -87,7 +88,7 @@ class AMQPChannel
      *
      * @return bool TRUE on success or FALSE on failure.
      */
-    public function rollbackTransaction ()
+    public function rollbackTransaction()
     {
     }
 
@@ -105,7 +106,7 @@ class AMQPChannel
      *
      * @return boolean TRUE on success or FALSE on failure.
      */
-    public function setPrefetchCount ($count)
+    public function setPrefetchCount($count)
     {
     }
 
@@ -114,7 +115,7 @@ class AMQPChannel
      *
      * @return integer
      */
-    public function getPrefetchCount ()
+    public function getPrefetchCount()
     {
     }
 
@@ -134,7 +135,7 @@ class AMQPChannel
      *
      * @return bool TRUE on success or FALSE on failure.
      */
-    public function setPrefetchSize ($size)
+    public function setPrefetchSize($size)
     {
     }
 
@@ -143,7 +144,7 @@ class AMQPChannel
      *
      * @return integer
      */
-    public function getPrefetchSize ()
+    public function getPrefetchSize()
     {
     }
 
@@ -157,8 +158,16 @@ class AMQPChannel
      *
      * @return bool TRUE on success or FALSE on failure.
      */
-    public function startTransaction ()
+    public function startTransaction()
+    {
+    }
+
+    /**
+     * Get the AMQPConnection object in use
+     *
+     * @return AMQPConnection
+     */
+    public function getConnection()
     {
     }
 }
-

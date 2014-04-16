@@ -1,4 +1,5 @@
 <?php
+
 /**
  * stub class representing AMQPExchange from pecl-amqp
  */
@@ -69,7 +70,7 @@ class AMQPExchange
      *
      * @return boolean true on success or false on failure.
      */
-    public function delete ($exchangeName = null, $flags = AMQP_NOPARAM)
+    public function delete($exchangeName = null, $flags = AMQP_NOPARAM)
     {
     }
 
@@ -82,7 +83,7 @@ class AMQPExchange
      *                                with the given key, or FALSE if the key
      *                                is not set.
      */
-    public function getArgument ($key)
+    public function getArgument($key)
     {
     }
 
@@ -136,7 +137,7 @@ class AMQPExchange
      * @param array   $attributes  One of content_type, content_encoding,
      *                             message_id, user_id, app_id, delivery_mode,
      *                             priority, timestamp, expiration, type
-     *                             or reply_to.
+     *                             or reply_to, headers.
      *
      * @throws AMQPExchangeException   On failure.
      * @throws AMQPChannelException    If the channel is not open.
@@ -144,7 +145,7 @@ class AMQPExchange
      *
      * @return boolean TRUE on success or FALSE on failure.
      */
-    public function publish (
+    public function publish(
         $message,
         $routing_key = null,
         $flags = AMQP_NOPARAM,
@@ -212,5 +213,22 @@ class AMQPExchange
     public function setType($exchange_type)
     {
     }
-}
 
+    /**
+     * Get the AMQPChannel object in use
+     *
+     * @return AMQPChannel
+     */
+    public function getChannel()
+    {
+    }
+
+    /**
+     * Get the AMQPConnection object in use
+     *
+     * @return AMQPConnection
+     */
+    public function getConnection()
+    {
+    }
+}
