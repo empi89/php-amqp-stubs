@@ -12,8 +12,8 @@
         "psr-0": {
             "": "src"
         },
-	"files": [
-	    "src/AMQP.php"
-	]
+        "files": [
+            "src/AMQP.php"
+        ]
     }
 }

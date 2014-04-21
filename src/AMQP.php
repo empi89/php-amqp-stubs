@@ -1,4 +1,7 @@
 <?php
+if (defined('AMQP_NOPARAM')) {
+    return;
+}
 
 define('AMQP_NOPARAM', 0);
 define('AMQP_DURABLE', 2);
