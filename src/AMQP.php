@@ -1,4 +1,7 @@
 <?php
+if (defined('AMQP_NOPARAM')) {
+    return;
+}
 
 /**
  * Passing in this constant as a flag will forcefully disable all other flags.
